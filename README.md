@@ -6,7 +6,7 @@
 * WebSecurityConfig > http.formLogin() > UsernamePasswordAuthenticationFilter > SecurityFilterChain > 요청별 인증수행
 https://github.com/thesun4sky/spring-auth/blob/ea0cc39d3c8c93b8026dea7e5245fc3268498f41/src/main/java/com/thesun4sky/springauth/config/WebSecurityConfig.java#L14-L46
 
-2. 인증정보 받아오기 & 인증객체에 넣기 (UserDetailsServiceImpl.java)https://github.com/thesun4sky/spring-auth
+2. 인증정보 받아오기 & 인증객체에 넣기 (UserDetailsServiceImpl.java)
 * UsernamePasswordAuthenticationFilter > UserDetailsService 구현 > loadUserByUsername() > User > UserDetails > Authentication (createSuccessAuthentication()에서 만들어짐)
 https://github.com/thesun4sky/spring-auth/blob/ea0cc39d3c8c93b8026dea7e5245fc3268498f41/src/main/java/com/thesun4sky/springauth/security/UserDetailsServiceImpl.java#L14-L30
 
